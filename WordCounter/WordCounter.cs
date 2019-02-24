@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Word_counter
+namespace WordCounter
 {
     public class WordCounter
     {
@@ -24,7 +24,7 @@ namespace Word_counter
             int count = 0;
             for (int i = 0; i < words.Length; i++)
             {
-                if (theWord == words[i])
+                if (theWord.ToLower() == words[i].ToLower())
                 {
                     count++;
                 }
